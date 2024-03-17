@@ -23,7 +23,7 @@ class PasswordAnalysisController extends Controller
         $duplicatePasswords = collect();
         $strongPasswords = collect();
 
-        // Function to determine if a password is strong
+        // ToDo: Implement a strong password checking function Faisal
         function isStrongPassword($password) {
             return strlen($password) >= 8 && preg_match('/[a-z]/', $password) &&
                    preg_match('/[A-Z]/', $password) && preg_match('/[0-9]/', $password) &&

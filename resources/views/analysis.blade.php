@@ -115,6 +115,7 @@
                         <!-- <li>Compromised Passwords: {{ $passwordCounts['compromised'] }}</li> -->
                         <li>Strong Passwords: {{ $passwordCounts['strong'] }}</li>
                     </ul>
+                    // ToDO: Add more functions Faisal
                 </div>
                 <!-- Button to Show/Hide Chart -->
                 <button id="showChartBtn" onclick="toggleDisplay()">View Chart</button>
