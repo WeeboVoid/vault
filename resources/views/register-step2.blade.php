@@ -10,6 +10,8 @@
     <style>
         body {
             font-family: 'Roboto', sans-serif;
+            background: linear-gradient(135deg, #C7C5F4, #776BCC);
+            min-height: 100vh;
         }
 
         .radio:checked+div {
@@ -46,7 +48,7 @@
             background-color: #4338CA;
         }
         .bg-gray-100{
-    background: linear-gradient(135deg, #b19cd9 0%, #6a5acd 100%);
+   
     }
   
       /* Apply the gradient to the entire body of the page for a full canvas of light and dark purples */
@@ -317,7 +319,14 @@
     
 
     <script>
-      
+       document.addEventListener('DOMContentLoaded', function () {
+    const arabicPhrases = [
+        'بِسْمِ-الله-الرَّحْمٰنِ-الرَّحِيْمِ',
+        'الحمدلله-رب-العالمين',
+        'الرحمن-الرحيم-مالك-يوم-الدين',
+        // ... more phrases
+    ];
+
     // Function to generate a random password
     function generateRandomPassword(length) {
         const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789ءآأؤإئابةتثجحخدذرزسشصضطظعغفقكلمنهوىي';
@@ -331,27 +340,9 @@
 
     // Function to select an Arabic phrase as a password
     function generateArabicPassword() {
-        return new Promise((resolve, reject) => {
-            fetch("{{ asset('assets/word-list.txt') }}")
-                .then(response => response.text())
-                .then(text => {
-                    var words = text.split('\n').filter(word => word.trim() !== '');
-                    var arabicPhrases = [];
-                    for (var i = 0; i < 3; i++) {
-                        var randomIndex = Math.floor(Math.random() * words.length);
-                        var randomWord = words[randomIndex];
-                        arabicPhrases.push(randomWord);
-                        words.splice(randomIndex, 1);
-                        if (i < 2) arabicPhrases.push('-');
-                    }
-                    resolve(arabicPhrases.join(''));
-                })
-                .catch(error => {
-                    console.error('Error fetching word list:', error);
-                    reject(error);
-                });
-        });
-    }    
+        const randomIndex = Math.floor(Math.random() * arabicPhrases.length);
+        return arabicPhrases[randomIndex];
+    }
 
     // Handling password generation for the random method
     document.getElementById('generateRandom').addEventListener('click', function () {

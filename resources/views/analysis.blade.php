@@ -14,9 +14,9 @@
     <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
     <style>
         body {
-            font-family: 'Arial', sans-serif;
-            background: radial-gradient(circle, #1e5799 0%, #2989d8 100%); /* Gradient background */
-            color: #fff; /* White text color */
+            font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #C7C5F4, #776BCC);
+    min-height: 100vh;
             padding-top: 50px; /* Add space at the top */
         }
 

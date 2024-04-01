@@ -1,5 +1,3 @@
-@extends('layouts.app')
-
 @section('content')
 <!DOCTYPE html>
 <html lang="en">
@@ -16,7 +14,13 @@
 <script src="https://cdn.jsdelivr.net/npm/@zxcvbn-ts/language-common@2.0.0/dist/zxcvbn-ts.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@zxcvbn-ts/language-en@2.0.0/dist/zxcvbn-ts.js"></script>
 </head>
-
+<style>
+  body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #C7C5F4, #776BCC);
+    min-height: 100vh;
+  }
+</style>
 <body class="bg-gray-100">
   
 <div class="min-h-screen flex flex-col items-center justify-center">

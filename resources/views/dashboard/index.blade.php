@@ -29,7 +29,9 @@
     } 
 
     .bg-gray-200 {
-      background: linear-gradient(135deg, #b19cd9 0%, #6a5acd 100%);
+          font-family: 'Roboto', sans-serif;
+          background: linear-gradient(135deg, #C7C5F4, #776BCC);
+          min-height: 100vh;
     } 
     
 

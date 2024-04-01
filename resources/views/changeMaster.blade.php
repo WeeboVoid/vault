@@ -10,7 +10,9 @@
 <style>
 
     .bg-gray-100{
-    background: linear-gradient(135deg, #b19cd9 0%, #6a5acd 100%);
+        font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #C7C5F4, #776BCC);
+    min-height: 100vh;
     }
   
       /* Apply the gradient to the entire body of the page for a full canvas of light and dark purples */

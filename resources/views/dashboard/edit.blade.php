@@ -11,6 +11,11 @@
     width: 100%;
 }
 
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #C7C5F4, #776BCC);
+    min-height: 100vh;
+}
 .centered-form form {
     width: 100%; /* Adjust this width as needed */
     max-width: 500px; /* Maximum width of the form */

@@ -22,6 +22,9 @@
             align-items: center;
             height: 100vh;
             margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(135deg, #C7C5F4, #776BCC);
+            min-height: 100vh;
         }
 
         .container {
